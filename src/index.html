@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRANAV UNIYAL</title>
+  <link rel="icon" href="logo.png" type="png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <button id="audio-btn" style="background: none; border: none; padding: 0; cursor: pointer;">
+    <img src="logo.png" class="logo" style="border-radius: 50%;"></button>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="hamburger" id="hamburger" aria-label="Open navigation" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <audio id="bg-audio" loop>
+  <source src="music.mp3" type="audio/mpeg"></audio>
+  <script>
+  const audio = document.getElementById('bg-audio');
+  const audioBtn = document.getElementById('audio-btn');
+  let isPlaying = false;
+
+  audioBtn.addEventListener('click', () => {
+    if (!isPlaying) {
+      audio.play();
+      isPlaying = true;
+      audioBtn.querySelector('img').style.opacity = '0.7'; // Optional visual feedback
+    } else {
+      audio.pause();
+      isPlaying = false;
+      audioBtn.querySelector('img').style.opacity = '1'; // Restore original look
+    }
+  });
+</script>
+
+ 
+
+  <!-- Home Section -->
+  <section id="home">
+    <canvas id="home-bg" class="bg-effect"></canvas>
+    <div class="content-wrapper">
+      <h1 class="glitch-title" aria-label="PRANAV UNIYAL">PRANAV<br>UNIYAL</h1>
+      <p class="subtitle">Machine Learning &amp; Artificial Intelligence</p>
+      <div class="buttons">
+        <a href="#about" class="neon-button">ABOUT</a>
+        <a href="#projects" class="neon-button">PROJECTS</a>
+        <a href="#contact" class="neon-button">CONTACT</a>
+      </div>
+      <div class="social-links" aria-label="Social Links">
+        <a href="https://github.com/Pranav-Uniyal" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/pranav-uniyal-894801251/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:pranavuniyal911@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="content">
+      <h2 class="section-title">About Me</h2>
+      <p id="info">
+        Hi,  I'm Pranav Uniyal, a third-year B.Tech student passionate about the world of data and intelligent systems.
+        My interests lie at the intersection of Machine Learning (ML), Deep Learning (DL), Data Science, and Data Analysis.
+        I enjoy solving real-world problems by leveraging data-driven techniques and constantly 
+        seek opportunities to expand my knowledge and apply it to impactful projects.
+      </p><br>
+      <h1 style="text-align: center; padding: 20px;">Skills</h1>
+      <div class="skills-grid">
+
+      <div class="skill-box">
+      <div class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="height: 35px;">
+      </div>
+      <div>Python</div>
+      </div>
+
+      <div class="skill-box">     
+      <div class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" style="height: 35px;">
+      </div>
+      <div>TensorFlow</div>
+      </div>
+
+      <div class="skill-box">
+      <div class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" alt="Keras" style="height: 35px;">
+      </div>
+      <div>Keras</div>
+      </div>
+
+      <div class="skill-box">
+      <div class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" style="height: 35px;">
+      </div>
+      <div>PyTorch</div>
+      </div>
+
+      <div class="skill-box">
+      <div class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" style="height: 35px;">
+      </div>
+      <div>NumPy</div>
+      </div>
+
+      <div class="skill-box">
+      <div class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" style="height: 35px;">
+      </div>
+      <div>Pandas</div>
+      </div>
+
+      <div class="skill-box">
+      <div class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn" style="height: 35px;">
+      </div>
+      <div>Scikit-learn</div>
+      </div>
+
+      <div class="skill-box">
+      <div class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib" style="height: 35px;">
+      </div>
+      <div>Matplotlib</div>
+      </div>
+      
+      <div class="skill-box">
+      <div class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" style="height: 35px;">
+      </div>
+      <div>HTML5</div>
+      </div>
+
+      <div class="skill-box">
+      <div class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" style="height: 35px;">
+      </div>
+      <div>CSS3</div>
+      </div>
+
+      <div class="skill-box">
+      <div class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" style="height: 35px;">
+      </div>
+      <div>JavaScript</div>
+      </div>
+
+     <div class="skill-box">
+     <div class="skill-icon">
+     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" style="height: 35px;">
+     </div>
+     <div>MySQL</div>
+     </div>
+
+   </div>
+ </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="content">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-img" style="background-image:url('deepfake.png');"></div>
+          <div class="project-content">
+            <div class="project-title">DeepFake Detection</div>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Tensorflow-Keras</span>
+              <span class="tech-tag">Streamlit</span>
+            </div>
+            <p>
+              Developed a CNN-based model to detect deepfake images by analyzing facial features and subtle pixel-level artifacts.
+              Trained on real and fake image datasets, the model achieves high accuracy and supports media authenticity verification.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Pranav-Uniyal/DeepFake_Detection" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-img" style="background-image:url('background.jpg');"></div>
+          <div class="project-content">
+            <div class="project-title">Portfolio-Website</div>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <p>
+             Designed and developed a futuristic personal portfolio website inspired by Cyberpunk and Tron Legacy,the site features neon-glow UI,animated grids,
+            and sleek transitions to deliver a visually immersive, sci-fi-themed user experience.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/synthwave-portfolio" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+         <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-img" style="background-image:url('movie.png');"></div>
+          <div class="project-content">
+            <div class="project-title">Movie Review Sentimental Analysis</div>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Tensorflow-Keras</span>
+              <span class="tech-tag">LSTM</span>
+            </div>
+            <p>
+            Built an LSTM model to classify movie reviews as positive or negative using the IMDb dataset.
+            Applied NLP techniques like tokenization, padding, and GloVe word embeddings. Achieved 90%+ accuracy using TensorFlow/Keras. 
+            Demonstrates skills in deep learning and real-world NLP.
+            </p>
+            <div class="project-links">
+              <a href="" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-img" style="background-image:url('food.png');"></div>
+          <div class="project-content">
+            <div class="project-title">Food Nutrition Analyser</div>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">SVM</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">NumPy</span>
+            </div>
+            <p>
+              Developed a machine learning-powered nutrition analyzer using SVM with 97% accuracy. Users input nutritional values (calories, fats, sugars, etc.), and the app classifies the food as Good, Moderate, or Bad based on encoded health scores.
+              It also provides personalized health tips for goals like weight loss, muscle gain, diabetes, and heart health.
+            </p>
+            <div class="project-links">
+              <a href="" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-img" style="background-image:url('plant.png');"></div>
+          <div class="project-content">
+            <div class="project-title">Plant Disease Prediction</div>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">CNN</span>
+              <span class="tech-tag">Streamlit</span>
+            </div>
+            <p>
+             This project leverages Convolutional Neural Networks (CNNs) to detect and classify plant diseases from leaf images with high accuracy. Using the PlantVillage dataset, the model was trained to identify over 38 plant disease categories,
+            including both infected and healthy leaves across crops like apple, tomato, corn, and grape. 
+            </p>
+            <div class="project-links">
+              <a href="" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="content">
+      <h2 class="section-title">Contact Me</h2>
+      <form action="https://formspree.io/f/mbloenzp" method="POST" class="contact-form" id="contactForm" autocomplete="off">
+  <div class="form-group">
+    <input type="text" class="form-input" id="name" name="name" placeholder=" " required />
+    <label for="name" class="form-label">Name</label>
+  </div>
+  <div class="form-group">
+    <input type="email" class="form-input" id="email" name="email" placeholder=" " required />
+    <label for="email" class="form-label">Email</label>
+  </div>
+  <div class="form-group">
+    <textarea class="form-input" id="message" name="message" placeholder=" " required></textarea>
+    <label for="message" class="form-label">Message</label>
+  </div>
+  <button type="submit" class="neon-button submit-btn">Send Message</button>
+ </form>
+
+  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="copyright">
+        &copy; 2025 Pranav Uniyal. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('show');
+    });
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('show');
+      });
+    });
+
+    // Navbar scroll effect & back to top button
+    window.addEventListener('scroll', function() {
+      const nav = document.getElementById('navbar');
+      if(window.scrollY > 40) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+      const backToTop = document.getElementById('backToTop');
+      if(window.scrollY > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+
+    // Animate content on scroll
+    function revealContent() {
+      document.querySelectorAll('.content').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealContent);
+    window.addEventListener('load', revealContent);
+
+    // Contact form submission (demo)
+    /*document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('formMsg').innerHTML = "<span style='color:var(--primary)'>Thank you! Your message has been sent.</span>";
+      this.reset();
+    });*/
+
+    // Particle background animation for home
+    const canvas = document.getElementById('home-bg');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resize);
+      resize();
+
+      let particles = [];
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.size = Math.random() * 2 + 1;
+          this.speedY = Math.random() * 1 + 0.5;
+          this.alpha = Math.random();
+        }
+        update() {
+          this.y += this.speedY;
+          if (this.y > canvas.height) {
+            this.y = 0;
+            this.x = Math.random() * canvas.width;
+          }
+        }
+        draw() {
+          ctx.fillStyle = `rgba(0, 240, 255, ${this.alpha})`;
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+      function initParticles() {
+        particles = [];
+        for (let i = 0; i < 120; i++) {
+          particles.push(new Particle());
+        }
+      }
+      function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.update();
+          p.draw();
+        });
+        requestAnimationFrame(animateParticles);
+      }
+      initParticles();
+      animateParticles();
+      window.addEventListener('resize', () => {
+        resize();
+        initParticles();
+      });
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed(".subtitle", {
+    strings: [
+      "Machine Learning Enthusiast",
+      "Deep Learning Explorer",
+      "Data Science And Data Analysis"
+    ],
+    typeSpeed: 90,
+    backSpeed: 90,
+    loop: true
+  });
+</script>
+
+</body>
+</body>
+</html>
